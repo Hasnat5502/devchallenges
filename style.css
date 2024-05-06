@@ -1,0 +1,97 @@
+.div1{
+    margin: auto;
+    width: 80vw;
+    height: 100%;
+    background-image: url(images/bg-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.div1>h1{
+    text-align: center;
+    padding-top: 30px;
+    font-size: 42px;
+    color: white;
+}
+.div1>p{
+    text-align: center;
+    font-size: larger;
+    color: white;
+}
+.bal-10{
+    grid-area: div-10;
+}
+.bal-20{
+    grid-area: div-20;
+}
+.bal-30{
+    grid-area: div-30;
+}
+.bal-40{
+    grid-area: div-40;
+}
+.bal-50{
+    grid-area: div-50;
+}
+.bal-60{
+    grid-area: div-60;
+}
+.form{
+    width: 90%;
+    margin: 50px auto;
+    background-color: black;
+    border-radius: 10px;
+    display: grid;
+   grid-template-areas: 
+   "div-10    div-20  "
+   "div-30   div-40"
+   "div-50 div-50"
+   "div-60 div-60";
+   align-items: end;
+}
+
+.bal{
+    width: 80%;
+    height: 50px;
+    border-radius: 15px;
+}
+legend{
+    color: white;
+    text-align: left;
+    margin-bottom: 20px;
+}
+label{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.bal-1{
+    width: 90%;
+    height: 200px;
+    border-radius: 15px;
+}
+.bal-2{
+    width: 90%;
+    height: 50px;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+    .form{
+        grid-template-areas: 
+        "div-10   "
+        "div-20   "
+        "div-30 "
+        "div-40 "
+        "div-50"
+        "div-60";
+        overflow-y: hidden;
+    }
+}
